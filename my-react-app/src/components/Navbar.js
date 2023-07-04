@@ -37,7 +37,9 @@ const Navbar = () => {
         <i onClick={handleClick}>{state.name}</i>
       </div>
       <div className={state.clicked ? "nav-menu active" : "nav-menu"}>
-        <Link to="/">Home</Link>
+        <Link className={"nav-links"} to="/">
+          Home
+        </Link>
         <Link to="/projects">Projects</Link>
         <Link to="/experience">Experience</Link>
       </div>
